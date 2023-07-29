@@ -36,6 +36,15 @@
     margin: 0 auto;
     max-width: 540px;
   }
+  //footer
+   .second .social-btns{
+    padding: 0;
+
+    a{
+      margin-right: 10px;
+      margin-left: 0;
+    }
+  }
 }
 
 @media (min-width: 768px){
@@ -57,6 +66,21 @@
     background: url(../img/bottlelogo.png) no-repeat;
     background-size: auto 90%;
     background-position: 100% 50%;
+  }
+  //footer
+  .web-map{
+    padding: 45px 0;
+  }
+  .second .social-btns{
+    a:last-child{
+      margin-right: 0;
+    }
+  }
+  .colophon{
+    .content{
+      width: 66.667%;
+      margin: 0 16%;
+    }
   }
 }
 

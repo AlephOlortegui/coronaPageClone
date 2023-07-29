@@ -13,6 +13,18 @@ img{
   padding: 14px 30px 10px;
   font: bold 0.8rem/1.5 $f-cambay;
 }
+.social-btns a{
+  display: inline-block;
+  text-decoration: none;
+  @include dimension(40px,40px);
+  line-height: 38px;
+  margin-right: 10px;
+  font-size: 1.4rem;
+  border: 2px solid #000;
+  border-radius: 50%;
+  text-align: center;
+  color: #000;
+}
 //right away import
 @import './partials/header';
 @import './partials/carousel';

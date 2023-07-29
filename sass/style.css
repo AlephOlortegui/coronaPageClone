@@ -26,6 +26,20 @@ img {
   font: bold 0.8rem/1.5 "Cambay", Helvetica, sans-serif;
 }
 
+.social-btns a {
+  display: inline-block;
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  margin-right: 10px;
+  font-size: 1.4rem;
+  border: 2px solid #000;
+  border-radius: 50%;
+  text-align: center;
+  color: #000;
+}
+
 header {
   z-index: 9;
 }
@@ -167,6 +181,80 @@ header {
   margin: 15px 0;
 }
 
+.web-map {
+  background-color: #032e5a;
+  padding: 30px 0;
+}
+
+.web-map .first {
+  margin-bottom: 40px;
+}
+
+.web-map ul.f-links {
+  color: #fff;
+}
+.web-map ul.f-links li:hover:not(li.inveb) {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.web-map .first ul.f-links li {
+  margin-bottom: 10px;
+  font: 700 12px/19px "Cambay", Helvetica, sans-serif;
+}
+
+.web-map .first ul.f-links li.inveb a {
+  display: inline-block;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #fff;
+}
+.web-map .first ul.f-links li.inveb a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.web-map .first ul.f-links li.inveb .children {
+  padding-left: 10px;
+}
+.web-map .first ul.f-links li.inveb .children li {
+  font: 500 11px/9px "Cambay", Helvetica, sans-serif;
+}
+
+.second .social-btns {
+  margin-bottom: 15px;
+  padding: 0 20px;
+}
+.second .social-btns a {
+  border-color: #fff;
+  border-radius: 50%;
+  color: #fff;
+  width: 36px;
+  height: 36px;
+  line-height: 32px;
+  margin-left: 10px;
+  font-size: 1.2rem;
+}
+.second .social-btns a:hover {
+  color: #f7ca4c;
+  border-color: #f7ca4c;
+  box-shadow: 0 0 10px rgba(247, 202, 76, 0.9);
+}
+
+.second .legal li {
+  margin-bottom: 4px;
+  font: 12px/19px Arial, Helvetica, sans-serif;
+}
+
+.colophon {
+  background: #002945;
+}
+.colophon .content {
+  padding: 20px 35px;
+  color: #fff;
+  font: 12px/19px "Cambay", Helvetica, sans-serif;
+}
+
 @media (min-width: 576px) {
   #logo {
     position: absolute;
@@ -204,6 +292,13 @@ header {
     margin: 0 auto;
     max-width: 540px;
   }
+  .second .social-btns {
+    padding: 0;
+  }
+  .second .social-btns a {
+    margin-right: 10px;
+    margin-left: 0;
+  }
 }
 @media (min-width: 768px) {
   .carousel-content .cta.btn {
@@ -222,6 +317,16 @@ header {
     background: url(../img/bottlelogo.png) no-repeat;
     background-size: auto 90%;
     background-position: 100% 50%;
+  }
+  .web-map {
+    padding: 45px 0;
+  }
+  .second .social-btns a:last-child {
+    margin-right: 0;
+  }
+  .colophon .content {
+    width: 66.667%;
+    margin: 0 16%;
   }
 }
 @media screen and (min-width: 992px) {
