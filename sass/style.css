@@ -193,41 +193,31 @@ header {
   padding: 120px 15px;
   margin-bottom: 70px;
 }
+.carousel-box .carousel-content > div {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 .carousel-box .carousel-content img {
   max-width: 220px;
   height: 120px;
   margin-bottom: 15px;
+  transform: translateY(-100%);
+  opacity: 0;
+  animation-delay: 0.5s;
 }
 .carousel-box .carousel-content h1 {
   font: bold 0.8rem/1.3 "Cambay", Helvetica, sans-serif;
   letter-spacing: 4px;
   color: #fff;
   margin: 0.5rem 0 0.5rem;
-}
-.carousel-box .carousel-content .cta.btn {
-  margin: 7.5px;
-}
-
-.carousel-content > div {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.carousel-content img {
-  transform: translateY(-100%);
-  opacity: 0;
-  animation-delay: 0.5s;
-}
-
-.carousel-content h1 {
   transform: translateY(100px);
   opacity: 0;
   animation-delay: 1s;
 }
-
-.carousel-content button {
+.carousel-box .carousel-content .cta.btn {
+  margin: 7.5px;
   transform: translateY(100px);
   opacity: 0;
   animation-delay: 1.3s;
@@ -508,7 +498,7 @@ header {
     max-height: 190px;
   }
   .carousel-box .carousel-content h1 {
-    margin: 0 3rem 1.2rem;
+    margin: 1rem 3rem 1.2rem;
   }
   #home-product .info {
     max-width: 960px;

@@ -22,45 +22,47 @@
   padding: 120px 15px;
   margin-bottom: 70px;
 
+  //JS actions for testing purposes
+  .carousel-content > div{
+    //background-color: rgba($color: #000000, $alpha: 0.4); // for testint purposes
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
   .carousel-content img{  
     max-width: 220px;
     height: 120px;
     margin-bottom: 15px;
+
+    //JS initial positions
+    transform: translateY(-100%);
+    opacity: 0;
+    animation-delay: .5s;
   }
   .carousel-content h1{
     font: bold 0.8rem/1.3 $f-cambay;
     letter-spacing: 4px;
     color: #fff ;
     margin: 0.5rem 0 0.5rem;
+
+    //JS initial positions
+    transform: translateY(100px);
+    opacity: 0;
+    animation-delay: 1s;
   }
   .carousel-content .cta.btn{
     margin: 7.5px;
+
+     //JS initial positions
+     transform: translateY(100px);
+     opacity: 0;
+     animation-delay: 1.3s;
   }
 }
-//JS actions for testing purposes
-.carousel-content > div{
-  //background-color: rgba($color: #000000, $alpha: 0.4); // for testint purposes
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-// Initial positions
-.carousel-content img{
-  transform: translateY(-100%);
-  opacity: 0;
-  animation-delay: .5s;
-}
-.carousel-content h1{
-  transform: translateY(100px);
-  opacity: 0;
-  animation-delay: 1s;
-}
-.carousel-content button{
-  transform: translateY(100px);
-  opacity: 0;
-  animation-delay: 1.3s;
-}
+
+//js TOGGLE ANIMATION runCarouselContent
 .run-content{
   /*animation: name duration delay(left out) iteration-count direction timming fill-mode*/
   animation: FadeIn 1s 1 ease-out forwards;
