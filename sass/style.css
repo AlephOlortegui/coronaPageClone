@@ -218,16 +218,19 @@ header {
 
 .carousel-content img {
   transform: translateY(-100%);
+  opacity: 0;
   animation-delay: 0.5s;
 }
 
 .carousel-content h1 {
   transform: translateY(100px);
+  opacity: 0;
   animation-delay: 1s;
 }
 
 .carousel-content button {
   transform: translateY(100px);
+  opacity: 0;
   animation-delay: 1.3s;
 }
 
