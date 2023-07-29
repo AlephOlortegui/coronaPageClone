@@ -32,3 +32,48 @@ header{
       }
   }
 }
+.links{
+  background-color: #f5c1c1;
+  padding-left: 5vw;
+  padding-top: 2rem;
+}
+
+.links .nav-list li{
+  text-transform: uppercase;
+  padding: 4px 0;
+  font: bold 1.37rem/1.6rem $f-PT;
+
+  &:hover:not(li.snl-link){
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+//first nav
+.links .nav-list.fnl{
+  margin-bottom: 25px;
+}
+//second nav
+.links .nav-list.snl{
+  margin-bottom: 25px;
+  li{
+    span:hover{
+      text-decoration: underline;
+      cursor: pointer;
+    }
+    ul{
+      padding: 10px 15px;
+      li{
+        font: 700 20px/24px $f-PT;
+      }
+    }
+    .social-btns{
+      margin-top: 15px;
+      
+      a:hover{
+        color: #7295e0;
+        border-color: #7295e0;
+        box-shadow: 0 0 10px rgba(114, 149, 224, 0.5);
+      } 
+    }
+  }
+}

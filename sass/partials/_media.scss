@@ -48,6 +48,30 @@
 }
 
 @media (min-width: 768px){
+  //header
+  .links{
+    padding-top: 15vh;
+  }
+  .nav-list{
+    min-height: 50vh;
+  }
+  .nav-list.fnl{
+    padding-right: 8%;
+    li{
+      font: bold 2.5rem/50px $f-PT;
+    }
+  }
+  .nav-list.snl{
+    padding-left: 8% !important;
+
+    span{
+      font: bold 3.75rem/1.1 $f-PT;
+    }
+
+    ul li:last-child{
+      width: 50%;
+    }
+  }
   //carousel
   .carousel-content .cta.btn{
     font-size: 1rem;

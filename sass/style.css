@@ -81,6 +81,48 @@ header {
   left: 0;
 }
 
+.links {
+  background-color: #f5c1c1;
+  padding-left: 5vw;
+  padding-top: 2rem;
+}
+
+.links .nav-list li {
+  text-transform: uppercase;
+  padding: 4px 0;
+  font: bold 1.37rem/1.6rem "PT Sans Narrow", sans-serif;
+}
+.links .nav-list li:hover:not(li.snl-link) {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.links .nav-list.fnl {
+  margin-bottom: 25px;
+}
+
+.links .nav-list.snl {
+  margin-bottom: 25px;
+}
+.links .nav-list.snl li span:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.links .nav-list.snl li ul {
+  padding: 10px 15px;
+}
+.links .nav-list.snl li ul li {
+  font: 700 20px/24px "PT Sans Narrow", sans-serif;
+}
+.links .nav-list.snl li .social-btns {
+  margin-top: 15px;
+}
+.links .nav-list.snl li .social-btns a:hover {
+  color: #7295e0;
+  border-color: #7295e0;
+  box-shadow: 0 0 10px rgba(114, 149, 224, 0.5);
+}
+
 .carousel {
   max-height: 775px;
 }
@@ -301,6 +343,27 @@ header {
   }
 }
 @media (min-width: 768px) {
+  .links {
+    padding-top: 15vh;
+  }
+  .nav-list {
+    min-height: 50vh;
+  }
+  .nav-list.fnl {
+    padding-right: 8%;
+  }
+  .nav-list.fnl li {
+    font: bold 2.5rem/50px "PT Sans Narrow", sans-serif;
+  }
+  .nav-list.snl {
+    padding-left: 8% !important;
+  }
+  .nav-list.snl span {
+    font: bold 3.75rem/1.1 "PT Sans Narrow", sans-serif;
+  }
+  .nav-list.snl ul li:last-child {
+    width: 50%;
+  }
   .carousel-content .cta.btn {
     font-size: 1rem;
   }
