@@ -2,8 +2,12 @@
 
 body{
   position: relative;
-  background-color: lightblue;
+  //background-color: lightblue;
   line-height: 1.4;
+  //JS
+  &.hideScrollBar{
+    overflow: hidden;
+  }
 }
 img{
   max-width: 100%;

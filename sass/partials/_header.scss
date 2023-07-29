@@ -8,7 +8,16 @@ header{
   @include dimension(4rem, 2.6rem);
   .logo{
     @include pAbs;
+    //js
+    transition: opacity .2s .3s ease-in;
   }
+   //JS
+   img.logo:last-child{
+    opacity: 0;
+  }
+  //JS
+  img.logo:first-child.hide{opacity: 0;}
+  img.logo:last-child.visible{opacity: 1;}
 }
 
 .burger{
@@ -22,6 +31,7 @@ header{
       @include dimension(30px, 3px);
       background-color: #fff;
       margin-top: 5px;
+      transition: .5s ease-in-out;
 
       &:nth-child(3){
           @include pAbs(7.7px);
@@ -31,11 +41,37 @@ header{
           left: 0;
       }
   }
+  // JS
+  &.active span{background: #000;}
+  &.active span:first-child{opacity: 0;}
+  &.active span:nth-child(2){transform: rotate(-315deg);}
+  &.active span:nth-child(3){transform: rotate(-45deg);}
+  &.active span:last-child{
+      left: 50%;
+      width: 0%;
+  }
 }
+
 .links{
-  background-color: #f5c1c1;
+  // background-color: #f5c1c1;
+  background-color: #fff;
   padding-left: 5vw;
   padding-top: 2rem;
+   //Js
+   top: -100vh;
+   transition: top .5s ease-in;
+  &.active{
+    top: 0vh;
+  }
+  .nav-list{
+    opacity: 0;
+    transform: scale(.8);
+    transition: all 0.3s 0.35s ease-in;
+  }
+  &.active .nav-list{
+    opacity: 1; 
+    transform: scale(1);
+  }
 }
 
 .links .nav-list li{

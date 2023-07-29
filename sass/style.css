@@ -12,8 +12,10 @@
 
 body {
   position: relative;
-  background-color: lightblue;
   line-height: 1.4;
+}
+body.hideScrollBar {
+  overflow: hidden;
 }
 
 img {
@@ -54,6 +56,16 @@ header {
 }
 #logo .logo {
   position: absolute;
+  transition: opacity 0.2s 0.3s ease-in;
+}
+#logo img.logo:last-child {
+  opacity: 0;
+}
+#logo img.logo:first-child.hide {
+  opacity: 0;
+}
+#logo img.logo:last-child.visible {
+  opacity: 1;
 }
 
 .burger {
@@ -71,6 +83,7 @@ header {
   height: 3px;
   background-color: #fff;
   margin-top: 5px;
+  transition: 0.5s ease-in-out;
 }
 .burger span:nth-child(3) {
   position: absolute;
@@ -80,11 +93,41 @@ header {
   position: absolute;
   left: 0;
 }
+.burger.active span {
+  background: #000;
+}
+.burger.active span:first-child {
+  opacity: 0;
+}
+.burger.active span:nth-child(2) {
+  transform: rotate(-315deg);
+}
+.burger.active span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+.burger.active span:last-child {
+  left: 50%;
+  width: 0%;
+}
 
 .links {
-  background-color: #f5c1c1;
+  background-color: #fff;
   padding-left: 5vw;
   padding-top: 2rem;
+  top: -100vh;
+  transition: top 0.5s ease-in;
+}
+.links.active {
+  top: 0vh;
+}
+.links .nav-list {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 0.3s 0.35s ease-in;
+}
+.links.active .nav-list {
+  opacity: 1;
+  transform: scale(1);
 }
 
 .links .nav-list li {
