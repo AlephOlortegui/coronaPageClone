@@ -1,0 +1,77 @@
+/*google fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Cambay&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap");
+/* General CSS */
+* {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  background-color: lightblue;
+  line-height: 1.4;
+}
+
+img {
+  max-width: 100%;
+}
+
+header {
+  z-index: 9;
+}
+
+#logo {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 9;
+  width: 4rem;
+  height: 2.6rem;
+}
+#logo .logo {
+  position: absolute;
+}
+
+.burger {
+  position: absolute;
+  top: 21px;
+  right: 15px;
+  z-index: 9;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.burger span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  margin-top: 5px;
+}
+.burger span:nth-child(3) {
+  position: absolute;
+  top: 7.7px;
+}
+.burger span:nth-child(4) {
+  position: absolute;
+  left: 0;
+}
+
+@media (min-width: 576px) {
+  #logo {
+    position: absolute;
+    top: 38px;
+    left: 50px;
+    width: 5.3rem;
+    height: 2.8rem;
+  }
+  .burger {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,37 @@
+/*google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Cambay&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
+/* General CSS */
+*{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+//variables
+$bg-blue: rgba(3, 46, 90, 0.5);
+$clr1: #fae9b8;
+$clr2: #032e5a; 
+$clr3: #002945; 
+$corona-yellow: #f7ca4c;
+$f-PT: 'PT Sans Narrow', sans-serif;
+$f-cambay: 'Cambay', Helvetica, sans-serif;
+$f-merri: 'Merriweather', serif;
+
+//mixins
+@mixin dimension ($w, $h){
+    width: $w;  
+    height: $h;
+}
+
+@mixin pAbs ($t:0,$r:0,$b:0,$l:0){
+    position: absolute;
+
+    @if $t != 0 {top: $t;}
+    @if $r != 0 {right: $r;}
+    @if $b != 0 {bottom: $b;}
+    @if $l != 0 {left: $l;}
+}

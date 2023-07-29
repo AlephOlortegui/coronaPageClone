@@ -1,0 +1,17 @@
+@import './partials/config';
+
+body{
+  position: relative;
+  background-color: lightblue;
+  line-height: 1.4;
+}
+img{
+  max-width: 100%;
+}
+//right away import
+@import './partials/header';
+@import './partials/carousel';
+@import './partials/banners';
+@import './partials/hometext';
+@import './partials/footer';
+@import './partials/media';

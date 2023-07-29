@@ -1,0 +1,34 @@
+header{
+  z-index: 9;
+  // background-color: tomato;
+}
+#logo{
+  @include pAbs(15px,0,0,15px);
+  z-index: 9;
+  @include dimension(4rem, 2.6rem);
+  .logo{
+    @include pAbs;
+  }
+}
+
+.burger{
+  @include pAbs(21px,15px);
+  z-index: 9;
+  @include dimension(30px, 30px);
+  cursor: pointer;
+
+  span{
+      display: block;
+      @include dimension(30px, 3px);
+      background-color: #fff;
+      margin-top: 5px;
+
+      &:nth-child(3){
+          @include pAbs(7.7px);
+      }
+      &:nth-child(4){
+          @include pAbs;
+          left: 0;
+      }
+  }
+}

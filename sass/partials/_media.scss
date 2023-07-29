@@ -1,0 +1,10 @@
+@media (min-width: 576px){
+  // Header
+  #logo{
+    @include pAbs(38px,0,0,50px);
+    @include dimension(5.3rem, 2.8rem);
+  }
+  .burger{
+    @include pAbs(50px,50px);
+  }
+}
