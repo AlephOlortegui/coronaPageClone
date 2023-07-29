@@ -39,7 +39,7 @@
 }
 //JS actions for testing purposes
 .carousel-content > div{
-  background-color: rgba($color: #000000, $alpha: 0.4); // for testint purposes
+  //background-color: rgba($color: #000000, $alpha: 0.4); // for testint purposes
   width: 100%;
   position: absolute;
   top: 0;
@@ -82,8 +82,15 @@
   margin: 0 5px;
   cursor: pointer;
   display: inline-block;
+  //animation
+  background-color: transparent;
 }
-
+.control-bg{
+  animation: controlBg .5s 1 ease-out forwards;
+}
+@keyframes controlBg {
+  100%{background-color: #fff;}
+}
 .control > li:hover{
   background: #fff;
 }

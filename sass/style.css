@@ -209,7 +209,6 @@ header {
 }
 
 .carousel-content > div {
-  background-color: rgba(0, 0, 0, 0.4);
   width: 100%;
   position: absolute;
   top: 0;
@@ -259,8 +258,18 @@ header {
   margin: 0 5px;
   cursor: pointer;
   display: inline-block;
+  background-color: transparent;
 }
 
+.control-bg {
+  animation: controlBg 0.5s 1 ease-out forwards;
+}
+
+@keyframes controlBg {
+  100% {
+    background-color: #fff;
+  }
+}
 .control > li:hover {
   background: #fff;
 }

@@ -18,6 +18,8 @@ const imgs = document.querySelectorAll('.carousel-img')
 const subImgs = document.querySelectorAll('.carousel-content img')
 const subH1 = document.querySelectorAll('.carousel-content h1')
 const subBtn = document.querySelectorAll('.carousel-content .cta.btn')
+//control
+const control = document.querySelectorAll('.control li')
 
 let carouselIndex = 0;
 let timer;
@@ -27,29 +29,44 @@ function toggleBg() {
   imgs[carouselIndex].classList.add('visible')
 }
 
-function runCarouselContent(arr) {
+function runCarouselContent(arr, ani) {
   const currElement = arr[carouselIndex]
   const nextIndex = (carouselIndex + 1) % arr.length;
   const nextElement = arr[nextIndex]
 
   //Run animations
-  currElement.classList.remove('run-content')
-  currElement.classList.add('run-content')
+  currElement.classList.remove(ani)
+  currElement.classList.add(ani)
 
   //Golden trick
-  nextElement.classList.remove('run-content')
+  nextElement.classList.remove(ani)
 }
 
-function runCarousel() {
+function runCarousel(i = 99) {
   carouselIndex++;
+  if(i !== 99) carouselIndex = i;
   if(carouselIndex>1) carouselIndex = 0;
   toggleBg()
-  runCarouselContent(subImgs)
-  runCarouselContent(subH1)
-  runCarouselContent(subBtn)
+  runCarouselContent(subImgs, 'run-content')
+  runCarouselContent(subH1, 'run-content')
+  runCarouselContent(subBtn, 'run-content')
+  runCarouselContent(control, 'control-bg')
 }
 
+control.forEach((li,i)=>{
+  li.addEventListener('click', ()=>{
+    runCarousel(i)
+    resetTimer()
+  })
+})
+
 function RunPage() {timer = setInterval(runCarousel, 3000);}
+
+//when any dot control is clicked
+function resetTimer(){
+  clearInterval(timer);
+  timer = setInterval(runCarousel, 5000);
+}
 
 //For testing purposes
 window.addEventListener('DOMContentLoaded', () => {
