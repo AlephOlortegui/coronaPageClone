@@ -30,6 +30,7 @@ img{
   color: #000;
 }
 //right away import
+@import './partials/controlAge';
 @import './partials/header';
 @import './partials/carousel';
 @import './partials/banners';

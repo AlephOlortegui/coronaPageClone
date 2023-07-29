@@ -1,0 +1,61 @@
+main{
+  display: none;
+}
+.age-box{
+  background-color: $clr1;
+  font-family: $f-PT;
+}
+.age-content{
+  min-height: 560px;
+}
+.age-logo{
+  width: 100px;
+}
+.age-title{
+  letter-spacing: .1rem;
+  margin: 10px 0 3rem;
+  color: $clr2;
+}
+// access Form
+.inputGroup {
+  max-width: 280px;
+  border: 3px solid $clr2;
+  padding: 0.37rem 0.1rem;
+  margin: 0 0.3rem 0.9rem;
+}
+.inputGroup input{
+  text-align: center;
+  border: none;
+  outline: none;
+  line-height: 2rem;
+  font-size: 1.5rem;
+  color: $clr2;
+  // background-color: $clr1;
+  background-color: transparent;
+
+  width: 72px;
+  border-right: 2px solid $clr2;
+
+  &::placeholder{
+    color: $clr2;
+  }
+}
+.inputGroup input#year{
+  width: 95px;
+  border-right: none;
+}
+#submit-age{
+  outline: none;
+  line-height: 2rem;
+  font-size: 1.5rem;
+  color: $clr2;
+  background-color: transparent;
+  border: 3px solid $clr2;
+  padding: 7px 20px;
+  margin: 0 0.3rem 0.9rem;
+  font-family: $f-PT;
+  font-weight: bold;
+  color: $clr2;
+  letter-spacing: 2px;
+  cursor: pointer;
+}

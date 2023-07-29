@@ -42,6 +42,75 @@ img {
   color: #000;
 }
 
+main {
+  display: none;
+}
+
+.age-box {
+  background-color: #fae9b8;
+  font-family: "PT Sans Narrow", sans-serif;
+}
+
+.age-content {
+  min-height: 560px;
+}
+
+.age-logo {
+  width: 100px;
+}
+
+.age-title {
+  letter-spacing: 0.1rem;
+  margin: 10px 0 3rem;
+  color: #032e5a;
+}
+
+.inputGroup {
+  max-width: 280px;
+  border: 3px solid #032e5a;
+  padding: 0.37rem 0.1rem;
+  margin: 0 0.3rem 0.9rem;
+}
+
+.inputGroup input {
+  text-align: center;
+  border: none;
+  outline: none;
+  line-height: 2rem;
+  font-size: 1.5rem;
+  color: #032e5a;
+  background-color: transparent;
+  width: 72px;
+  border-right: 2px solid #032e5a;
+}
+.inputGroup input::-moz-placeholder {
+  color: #032e5a;
+}
+.inputGroup input::placeholder {
+  color: #032e5a;
+}
+
+.inputGroup input#year {
+  width: 95px;
+  border-right: none;
+}
+
+#submit-age {
+  outline: none;
+  line-height: 2rem;
+  font-size: 1.5rem;
+  color: #032e5a;
+  background-color: transparent;
+  border: 3px solid #032e5a;
+  padding: 7px 20px;
+  margin: 0 0.3rem 0.9rem;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: bold;
+  color: #032e5a;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
 header {
   z-index: 9;
 }
@@ -436,6 +505,11 @@ header {
   }
 }
 @media (min-width: 768px) {
+  .age-content {
+    background: url(../img/bottlelogo.png) no-repeat right center;
+    background-size: contain;
+    padding-right: 360px;
+  }
   .links {
     padding-top: 15vh;
   }

@@ -48,6 +48,12 @@
 }
 
 @media (min-width: 768px){
+  //Age controller
+  .age-content{
+    background: url(../img/bottlelogo.png) no-repeat right center;
+    background-size: contain;
+    padding-right: 360px;
+  }
   //header
   .links{
     padding-top: 15vh;
