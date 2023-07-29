@@ -133,6 +133,40 @@ header {
   max-height: 50px;
 }
 
+#home-product {
+  width: 100%;
+  position: relative;
+  background: #fff url(../img/bg-triangle.png) no-repeat -100vw 100%/200vw;
+}
+
+#home-product .info {
+  padding: 60px 15px;
+}
+
+#home-product .info .text {
+  max-width: 560px;
+}
+#home-product .info .text h1 {
+  color: #002945;
+  margin-bottom: 8px;
+  font: 400 3.1rem/1.2 "PT Sans Narrow", sans-serif;
+}
+#home-product .info .text .small {
+  margin: 15px auto;
+  font-size: 1rem;
+  font-family: "Cambay", Helvetica, sans-serif;
+  color: #002945;
+}
+#home-product .info .text .fst-italic {
+  color: #002945;
+  font: bold 1.5rem "Merriweather", serif;
+}
+#home-product .info .text .cta.btn {
+  font-weight: 600;
+  color: #fff;
+  margin: 15px 0;
+}
+
 @media (min-width: 576px) {
   #logo {
     position: absolute;
@@ -166,6 +200,10 @@ header {
   .banners ul li img {
     max-height: 100%;
   }
+  #home-product .info {
+    margin: 0 auto;
+    max-width: 540px;
+  }
 }
 @media (min-width: 768px) {
   .carousel-content .cta.btn {
@@ -173,6 +211,17 @@ header {
   }
   .control {
     bottom: 22%;
+  }
+  #home-product {
+    background-size: cover;
+    background-position: 0 100%;
+  }
+  #home-product .info {
+    padding: 75px 15px;
+    max-width: 720px;
+    background: url(../img/bottlelogo.png) no-repeat;
+    background-size: auto 90%;
+    background-position: 100% 50%;
   }
 }
 @media screen and (min-width: 992px) {
@@ -189,5 +238,8 @@ header {
   }
   .carousel-box .carousel-content h1 {
     margin: 0 3rem 1.2rem;
+  }
+  #home-product .info {
+    max-width: 960px;
   }
 }/*# sourceMappingURL=style.css.map */
