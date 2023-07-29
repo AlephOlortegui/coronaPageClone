@@ -1,10 +1,22 @@
 .carousel{
   max-height: 775px;
 }
+// **** JS actions
+.carousel-img{
+  transition: opacity 1s ease;
+}
 .carousel-img:nth-child(1){
   background: url(../img/bg1.jpg) center/cover;
   z-index: -1;
 }
+.carousel-img:nth-child(2){
+  background: url(../img/bg2.jpg) center/cover;
+  z-index: -1;
+  opacity: 0; // initial value
+}
+// Js active Class
+.carousel-img.visible{opacity: 1;}
+// ****** End JS actions
 
 .carousel-box{
   padding: 120px 15px;
@@ -24,6 +36,37 @@
   .carousel-content .cta.btn{
     margin: 7.5px;
   }
+}
+//JS actions for testing purposes
+.carousel-content > div{
+  background-color: rgba($color: #000000, $alpha: 0.4); // for testint purposes
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+// Initial positions
+.carousel-content img{
+  transform: translateY(-100%);
+  // opacity: 0;
+  animation-delay: .5s;
+}
+.carousel-content h1{
+  transform: translateY(100px);
+  // opacity: 0;
+  animation-delay: 1s;
+}
+.carousel-content button{
+  transform: translateY(100px);
+  // opacity: 0;
+  animation-delay: 1.3s;
+}
+.run-content{
+  /*animation: name duration delay(left out) iteration-count direction timming fill-mode*/
+  animation: FadeIn 1s 1 ease-out forwards;
+}
+@keyframes FadeIn {
+  100%{transform: translateY(0); opacity: 1;}
 }
 
 // control
