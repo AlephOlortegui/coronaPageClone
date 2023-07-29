@@ -7,4 +7,57 @@
   .burger{
     @include pAbs(50px,50px);
   }
+  // Carousel
+  .carousel-box{
+    padding: 140px 30px 150px;
+
+      .carousel-content img{  
+        max-width: 320px;
+        max-height: 120px;
+        height: auto;
+      }
+      .carousel-content h1{
+        font: bold 1.37rem/120% $f-cambay;
+      }
+
+      .carousel-content .cta.btn{
+        padding: 16px 50px 12px;
+      }
+  }
+  .control{
+    bottom: 20%;
+  }
+  // banners
+  .banners ul li img{
+    max-height: 100%;
+  }
+}
+
+@media (min-width: 768px){
+  //carousel
+  .carousel-content .cta.btn{
+    font-size: 1rem;
+  }
+  .control{
+    bottom: 22%;
+  }
+}
+
+@media screen and (min-width: 992px){
+  //sliders
+  .carousel-box{
+    padding: 140px 15px 200px;
+    margin-bottom: 100px;
+
+    .carousel-content{
+      margin: 0 auto 60px; /*added bottom 60px*/
+    }
+    .carousel-content img{  
+      max-width: 390px;
+      max-height: 190px;
+    }
+    .carousel-content h1{
+      margin: 0 3rem 1.2rem;
+    }
+  }
 }

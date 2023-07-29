@@ -8,6 +8,11 @@ body{
 img{
   max-width: 100%;
 }
+.cta.btn{
+  color: $clr2;
+  padding: 14px 30px 10px;
+  font: bold 0.8rem/1.5 $f-cambay;
+}
 //right away import
 @import './partials/header';
 @import './partials/carousel';

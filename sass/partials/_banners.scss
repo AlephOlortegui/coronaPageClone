@@ -1,0 +1,16 @@
+.banners{
+  background-color: $bg-blue;
+}
+
+.banners ul li:first-child{
+  background-color: $corona-yellow;
+}
+.banners ul li:last-child{
+  background-color: $clr2;
+}
+
+.banners ul li img{
+  display: block;
+  margin: 0 auto;
+  max-height: 50px;
+}
